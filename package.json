@@ -1,6 +1,6 @@
 
   {
-  "name": "reddot-printing-website",
+      "name": "RedDOT Printing Landing Page",
       "version": "0.1.0",
       "private": true,
       "dependencies": {

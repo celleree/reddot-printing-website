@@ -52,11 +52,17 @@ export default function App() {
               On-Demand Digital Printing in Orange County — Fast, Premium, Guaranteed.
             </h1>
             <p className="text-xl sm:text-2xl text-gray-600 mb-8 leading-relaxed">
-              Serving Orange & Fullerton with lightning-fast turnaround, exceptional quality, and owner-led personalized service. Family-owned, local, and trusted.
+              Serving all of Southern California with lightning-fast turnaround, exceptional quality, and owner-led personalized service. Family-owned, local, and trusted.
             </p>
 
             {/* Trust Bullets */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-10">
+              <div className="flex items-center gap-2 text-gray-700">
+                <div className="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-4 h-4 text-red-600" />
+                </div>
+                <span className="font-medium">Same Day Printing & Delivery</span>
+              </div>
               <div className="flex items-center gap-2 text-gray-700">
                 <div className="w-6 h-6 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
                   <CheckCircle className="w-4 h-4 text-red-600" />
@@ -362,6 +368,10 @@ export default function App() {
                     <CheckCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                     <span>Custom Print Projects</span>
                   </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                    <span>Anything you want to get printed</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -459,7 +469,7 @@ export default function App() {
                     <div>
                       <p className="font-semibold text-white mb-1">Business Hours</p>
                       <p className="text-gray-300">Monday – Friday: 9:00 AM – 6:00 PM</p>
-                      <p className="text-gray-300">Saturday & Sunday: Closed</p>
+                      <p className="text-gray-300">Saturday & Sunday: By Appointment Only</p>
                     </div>
                   </div>
                 </div>
