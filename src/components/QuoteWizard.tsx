@@ -123,7 +123,7 @@ export function QuoteWizard() {
 
   if (isSubmitted) {
     return (
-      <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-8 sm:p-12 text-center">
+      <div className="max-w-2xl mx-auto bg-white rounded-2xl p-8 sm:p-12 text-center">
         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <CheckCircle className="w-12 h-12 text-green-600" />
         </div>
@@ -172,7 +172,7 @@ export function QuoteWizard() {
   }
 
   return (
-    <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+    <div className="max-w-3xl mx-auto bg-white rounded-2xl overflow-hidden">
       {/* Progress Indicator */}
       {step <= totalSteps && (
         <div className="bg-gray-50 px-6 sm:px-8 py-6 border-b border-gray-200">

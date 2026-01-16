@@ -9,7 +9,7 @@ interface ReviewCardProps {
 
 export function ReviewCard({ rating, quote, author, source }: ReviewCardProps) {
   return (
-    <div className="bg-white rounded-xl p-6 border-2 border-gray-100 hover:shadow-xl hover:border-red-100 transition-all">
+    <div className="bg-white rounded-xl p-6 border-2 border-gray-100 hover:border-red-100 transition-all">
       {/* Stars */}
       <div className="flex items-center gap-1 mb-4">
         {[...Array(rating)].map((_, i) => (

@@ -94,7 +94,7 @@ export function QuoteForm() {
 
   if (isSubmitted) {
     return (
-      <div className="bg-white rounded-2xl shadow-2xl p-8 sm:p-12 text-center border border-gray-100">
+      <div className="bg-white rounded-2xl p-8 sm:p-12 text-center border border-gray-100">
         <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
           <CheckCircle className="w-12 h-12 text-green-600" />
         </div>
@@ -147,7 +147,7 @@ export function QuoteForm() {
   }
 
   return (
-    <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden">
+    <div className="bg-white rounded-2xl border border-gray-100 overflow-hidden">
       {/* Progress Indicator */}
       <div className="bg-gray-50 px-6 sm:px-8 py-6 border-b border-gray-200">
         <div className="flex items-center justify-between mb-2">
@@ -179,10 +179,10 @@ export function QuoteForm() {
               <button
                 key={option}
                 onClick={() => handleProductSelect(option)}
-                className={`p-6 rounded-xl border-2 text-left transition-all focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 ${
+                className={`p-6 rounded-xl border-2 text-left transition-all ${
                   formData.printType === option
-                    ? 'border-red-600 bg-red-50 shadow-lg'
-                    : 'border-gray-200 hover:border-red-300 hover:shadow-md'
+                    ? 'border-red-600 bg-red-50'
+                    : 'border-gray-200 hover:border-red-300'
                 }`}
               >
                 <div className="flex items-center justify-between">
@@ -205,7 +205,7 @@ export function QuoteForm() {
 
           <button
             onClick={handleNext}
-            className="w-full px-8 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 shadow-xl shadow-red-600/30 flex items-center justify-center gap-2"
+            className="w-full px-8 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all flex items-center justify-center gap-2"
           >
             Continue
             <ChevronRight className="w-5 h-5" />
@@ -236,7 +236,7 @@ export function QuoteForm() {
                 id="name"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors ${
+                className={`w-full px-4 py-3 rounded-lg border-2 transition-colors ${
                   errors.name ? 'border-red-500' : 'border-gray-200 focus:border-red-600'
                 }`}
                 placeholder="John Smith"
@@ -256,7 +256,7 @@ export function QuoteForm() {
                 id="phone"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors ${
+                className={`w-full px-4 py-3 rounded-lg border-2 transition-colors ${
                   errors.phone ? 'border-red-500' : 'border-gray-200 focus:border-red-600'
                 }`}
                 placeholder="(714) 555-1234"
@@ -276,7 +276,7 @@ export function QuoteForm() {
                 id="email"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors ${
+                className={`w-full px-4 py-3 rounded-lg border-2 transition-colors ${
                   errors.email ? 'border-red-500' : 'border-gray-200 focus:border-red-600'
                 }`}
                 placeholder="john@company.com"
@@ -296,7 +296,7 @@ export function QuoteForm() {
                 id="company"
                 value={formData.company}
                 onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-600 transition-colors"
+                className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-red-600 transition-colors"
                 placeholder="Your Company Name"
               />
             </div>
@@ -311,7 +311,7 @@ export function QuoteForm() {
                 id="quantity"
                 value={formData.quantity}
                 onChange={(e) => setFormData({ ...formData, quantity: e.target.value })}
-                className={`w-full px-4 py-3 rounded-lg border-2 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors ${
+                className={`w-full px-4 py-3 rounded-lg border-2 transition-colors ${
                   errors.quantity ? 'border-red-500' : 'border-gray-200 focus:border-red-600'
                 }`}
                 placeholder="e.g., 500, 1000"
@@ -332,7 +332,7 @@ export function QuoteForm() {
               id="neededBy"
               value={formData.neededBy}
               onChange={(e) => setFormData({ ...formData, neededBy: e.target.value })}
-              className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-600 transition-colors"
+              className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-red-600 transition-colors"
             />
           </div>
 
@@ -346,7 +346,7 @@ export function QuoteForm() {
               value={formData.notes}
               onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
               rows={4}
-              className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-600 transition-colors resize-none"
+              className="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-red-600 transition-colors resize-none"
               placeholder="Size preferences, paper type, finishing options, design details, etc."
             />
           </div>
@@ -391,14 +391,14 @@ export function QuoteForm() {
             <button
               type="button"
               onClick={handleBack}
-              className="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-50 transition-all focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 flex items-center justify-center gap-2"
+              className="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-50 transition-all flex items-center justify-center gap-2"
             >
               <ChevronLeft className="w-5 h-5" />
               Back
             </button>
             <button
               type="submit"
-              className="flex-1 px-8 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 shadow-xl shadow-red-600/30 flex items-center justify-center gap-2"
+              className="flex-1 px-8 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all flex items-center justify-center gap-2"
             >
               <Send className="w-5 h-5" />
               Get My Fast Quote

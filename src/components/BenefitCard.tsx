@@ -6,7 +6,7 @@ interface BenefitCardProps {
 
 export function BenefitCard({ icon, title, description }: BenefitCardProps) {
   return (
-    <div className="bg-white rounded-xl border-2 border-gray-100 p-6 hover:shadow-lg transition-all hover:border-gray-200 group">
+    <div className="bg-white rounded-xl border-2 border-gray-100 p-6 transition-all hover:border-gray-200 group">
       <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
         {icon}
       </div>

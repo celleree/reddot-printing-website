@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Phone, Mail, Clock, MapPin, CheckCircle, Zap, Award, Users, DollarSign, FileCheck, Heart } from 'lucide-react';
 import logoImage from 'figma:asset/7ce7c1afde59b3ffa1a6a36c81a4d2f1dc591e72.png';
-import samplesImage from 'figma:asset/dcba9814bfe114b65a8e20bf05033f8da40aebd3.png';
 import { QuoteForm } from './components/QuoteForm';
 import { BenefitBlock } from './components/BenefitBlock';
 import { ReviewCard } from './components/ReviewCard';
@@ -11,7 +10,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white shadow-sm sticky top-0 z-50 border-b border-gray-100">
+      <header className="bg-white sticky top-0 z-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
@@ -32,7 +31,7 @@ export default function App() {
               </a>
               <a
                 href="#quote"
-                className="px-4 sm:px-6 py-2.5 sm:py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 shadow-lg shadow-red-600/30"
+                className="px-4 sm:px-6 py-2.5 sm:py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all"
               >
                 Get a Fast Quote
               </a>
@@ -87,13 +86,13 @@ export default function App() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="#quote"
-                className="w-full sm:w-auto px-8 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 shadow-xl shadow-red-600/30"
+                className="w-full sm:w-auto px-8 py-4 bg-red-600 text-white rounded-lg font-bold text-lg hover:bg-red-700 transition-all"
               >
                 Get a Fast Quote
               </a>
               <a
                 href="tel:714-930-5200"
-                className="w-full sm:w-auto px-8 py-4 bg-gray-900 text-white rounded-lg font-bold text-lg hover:bg-gray-800 transition-all focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 shadow-xl"
+                className="w-full sm:w-auto px-8 py-4 bg-gray-900 text-white rounded-lg font-bold text-lg hover:bg-gray-800 transition-all"
               >
                 Call (714) 930-5200
               </a>
@@ -233,7 +232,7 @@ export default function App() {
                 href="https://www.google.com/search?q=reddot+printing&rlz=1C1VDKB_enUS962US967&oq=reddot+printing&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMhAIARAuGK8BGMcBGIAEGI4FMggIAhAAGBYYHjINCAMQABiGAxiABBiKBTINCAQQABiGAxiABBiKBTIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPdIBCDMzMjhqMGo3qAIIsAIB8QWQTAVqJk1lBg&sourceid=chrome&ie=UTF-8#lrd=0x80dcd60c804e4573:0xca541fd0e5c5c832,1,,,,"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-white border-2 border-gray-300 text-gray-900 rounded-lg font-semibold hover:border-red-600 hover:text-red-600 transition-all focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 shadow-sm hover:shadow-md"
+                className="px-6 py-3 bg-white border-2 border-gray-300 text-gray-900 rounded-lg font-semibold hover:border-red-600 hover:text-red-600 transition-all"
               >
                 Google Reviews
               </a>
@@ -241,7 +240,7 @@ export default function App() {
                 href="https://www.yelp.com/biz/reddot-printing-orange-3#reviews"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-white border-2 border-gray-300 text-gray-900 rounded-lg font-semibold hover:border-red-600 hover:text-red-600 transition-all focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 shadow-sm hover:shadow-md"
+                className="px-6 py-3 bg-white border-2 border-gray-300 text-gray-900 rounded-lg font-semibold hover:border-red-600 hover:text-red-600 transition-all"
               >
                 Yelp Reviews
               </a>
@@ -249,7 +248,7 @@ export default function App() {
                 href="https://local.yahoo.com/info-195796114-red-dot-printing-fullerton/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAAL4D52dPOF5sTG1HGp3zWvaoIUlBkwzY_JS5VGf00Ai12vUFRC3RkS1yhdw1Mr7kAp2sG8WRgM23jMDC9oaJJZyDqtv_zc9oP0XVJ3eIGL0DtEYMi1WOiyAMltAzQ2YZ6Z6BwOsLTqvJ4KFUomtMP-Zr5Q0uogm7UB2h9uOsUVTt"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-white border-2 border-gray-300 text-gray-900 rounded-lg font-semibold hover:border-red-600 hover:text-red-600 transition-all focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 shadow-sm hover:shadow-md"
+                className="px-6 py-3 bg-white border-2 border-gray-300 text-gray-900 rounded-lg font-semibold hover:border-red-600 hover:text-red-600 transition-all"
               >
                 Yahoo Reviews
               </a>
@@ -269,10 +268,10 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="aspect-square bg-gray-200 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="aspect-square bg-gray-200 rounded-2xl overflow-hidden">
                 <img 
-                  src={samplesImage}
-                  alt="RedDOT Printing samples and services" 
+                  src="/assets/meet-z.webp"
+                  alt="Z, Owner & Master Printer at RedDot Printing"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -407,7 +406,7 @@ export default function App() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
             {/* Map Placeholder */}
-            <div className="bg-gray-800 rounded-xl overflow-hidden shadow-2xl h-80 lg:h-full min-h-[400px]">
+            <div className="bg-gray-800 rounded-xl overflow-hidden h-80 lg:h-full min-h-[400px]">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.8776699999997!2d-117.85634!3d33.80944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcd7d8e1234567%3A0x1234567890abcdef!2s941%20N%20Elm%20St%20Suite%20A%2C%20Orange%2C%20CA%2092867!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
                 width="100%"
@@ -479,13 +478,13 @@ export default function App() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="tel:714-930-5200"
-                    className="flex-1 px-6 py-4 bg-red-600 text-white rounded-lg font-bold text-center hover:bg-red-700 transition-all focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 focus:ring-offset-gray-900"
+                    className="flex-1 px-6 py-4 bg-red-600 text-white rounded-lg font-bold text-center hover:bg-red-700 transition-all"
                   >
                     Call Now
                   </a>
                   <a
                     href="#quote"
-                    className="flex-1 px-6 py-4 bg-white text-gray-900 rounded-lg font-bold text-center hover:bg-gray-100 transition-all focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-900"
+                    className="flex-1 px-6 py-4 bg-white text-gray-900 rounded-lg font-bold text-center hover:bg-gray-100 transition-all"
                   >
                     Get a Fast Quote
                   </a>
