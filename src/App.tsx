@@ -268,11 +268,11 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="aspect-square bg-gray-200 rounded-2xl overflow-hidden">
+              <div className="aspect-[4/5] bg-gray-200 rounded-2xl overflow-hidden">
                 <img 
                   src="/assets/meet-z.webp"
                   alt="Z, Owner & Master Printer at RedDot Printing"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </div>
